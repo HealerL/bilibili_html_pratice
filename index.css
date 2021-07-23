@@ -1,0 +1,1070 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 1250px;
+    background-color: #fff;
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 158px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+video {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* translate控制元素的平移，第一个为水平方向平移距离，第二个为垂直方向 */
+    transform: scale(1) translate(0px, 0px);
+    object-fit: cover;
+}
+
+#nav {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between; */
+    position: absolute;
+    top: 5px;
+    left:0;
+    z-index: 10;
+    padding: 10px 10px;
+    width: 100%;
+    height: 56px;
+    margin: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    vertical-align: middle;
+    
+}
+
+
+
+#navleft {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width:30%;
+    min-width: 480px;
+    padding: 10px 10px 10px 20px;
+    box-sizing: border-box;
+    height: 52px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+.navlist {
+    float: left;
+    /* 百度的方法 */
+    /* display: inline-block; */
+    vertical-align: middle;
+    padding: 0;
+    /* 行高与图片高度设为一致时便于中间对齐 */
+    line-height: 32px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #fff;
+    margin-right:  5px;
+    font-size: 0.9em;
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+
+#input1 {
+    position: absolute;
+    top:0;
+    left: 35%;
+    overflow: hidden;
+    padding-top: 9px;
+    width: 30%;
+    min-width: 100px;
+    margin: 0;
+    white-space: nowrap;
+    height: 39px;
+
+
+}
+
+
+#input1 input {
+    float: left;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid hsla(0, 0%, 100%, 0);
+    height: 34px;
+    outline: none;
+    margin: 0;
+    padding-left: 10px;
+    width: 80%;
+
+
+}
+
+.icon {
+    float: left;
+    /* position: absolute; */
+    height: 34px;
+    border: 1px solid transparent;
+    border-radius: 0 4px 4px 0;
+    padding: 0;
+    width: 40px;
+    background: url(images/search.png) center center no-repeat;
+    background-color: silver;
+}
+
+
+.icon:hover {
+    cursor: pointer;
+}
+
+#input1 i {
+    font-size: 20px;
+}
+
+
+
+#user {
+    position: absolute;
+    top:0;
+    right: 15px;
+    width: 35%;
+    min-width: 420px;
+    overflow: hidden;
+    padding: 10px 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.userinfo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 10px 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+#user_img img{
+    width: 32px;
+    height: 32px;
+    border-radius: 18px;
+    vertical-align: middle;
+
+}
+
+
+#tougao {
+    text-align: center;
+}
+
+#tougao a{
+    margin-left: 0;
+    padding: 10px 20px 10px 20px;
+    background-color: #FB7299;
+    border: 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#logo a {
+    position: absolute;
+    left: 30px;
+    width: 220px;
+    height: 50%;
+    min-height: 60px;
+    bottom: 10px;
+    z-index: 10;
+
+}
+
+#logo a img {
+    height: 100%;
+}
+
+
+#category {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 108px;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+#category a {
+    text-decoration: none;
+    color: #212121;
+}
+
+#category a:hover {
+    color: #73c9e5;
+}
+
+
+#catleft {
+    width: 200px;
+}
+
+
+
+#catleft ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+#catleft li {
+    list-style-type: none;
+    padding: 0 8px;
+    width: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 68px;
+    text-align: center;
+
+}
+
+
+#catleft img {
+    width: 36px;
+    height: 36px;
+}
+
+span.tabline {
+    margin: 0 8px;
+    /* 必须要添加一个高度，才能使边框生效 */
+    height: 46px;
+    border-left: 1px solid #e7e7e7;
+}
+
+#catmid {
+    display: flex;
+    /* 使用列方向布局，可以保证上下一一对齐，并允许换行 */
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 68px;
+    width: 550px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* align-content: space-between;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+
+
+a.midname {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 34px;
+
+}
+
+.midname em {
+    display: inline-block;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    background-color: #73c9e5;
+    border-radius: 2px;
+    margin-left: 1px;
+    width: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    transform: scale(.85);
+}
+
+#catright {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 68px;
+    width: 240px;
+    box-sizing: border-box;
+
+}
+
+#catright a {
+    display: flex;
+    align-items: center;
+    /* display: inline-block; */
+    height: 34px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+#catright span {
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+#catright img {
+    vertical-align: middle;
+}
+
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+#midwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 202px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+
+#midwrap_left {
+    width:459px;
+    height: 202px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+
+#change_pic {
+    /* display: flex; */
+    position: relative;
+    /* flex-direction: row; */
+    width: 459px;
+    height: 202px;
+    /* width: 10000px;
+    height: 10000px; */
+    overflow: hidden;
+    /* animation: 3s fddd infinite;
+    /* transition: all .5s; */
+    /* transition: all .2s ease-in-out; */
+}
+
+/* @keyframes fddd {
+    0%{}
+    33%{transform: translate3d(0px ,0px, 0px);}
+    66%{transform: translate3d(-459px, 0px, 0px);}
+    100%{transform: translate3d(-918px, 0px, 0px);}
+} */
+
+.change {
+    /* float: left; */
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+ 
+}
+ 
+    /* z-index: 100; */
+
+    
+
+
+/* 为文字区域添加一个背景，使文字显示更清晰 */
+.change::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-image: url(images/bg.png);
+    background-size: contain;
+    border-radius: 2px;
+    content: "";
+}
+
+
+
+.change a img {
+    width: 459px;
+    height: 202px;
+    
+    /* box-shadow: inset 0 0  20px #212121; */
+    /* -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); */
+}
+
+.change span {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+    color: #fff;
+    text-overflow: ellipsis;
+}
+
+
+
+
+#midwrap_left input {
+    display: none;
+}
+
+
+#change1 {
+    z-index: 11;
+}
+
+#change2 {
+    z-index: 10;
+}
+#change3 {
+    z-index: 9;
+}
+
+#tragger {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    text-align: center;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    /* animation: 3s tttt infinite; */
+    /* transition: all .5s; */
+    transition: all .2s ease-in-out;
+}
+
+/* @keyframes tttt {
+    0%{}
+    33%{ label:nth-of-type(1) {background-color: #333;}}
+    66%{transform: translate3d(-459px, 0px, 0px);}
+    100%{transform: translate3d(-918px, 0px, 0px);}
+} */
+
+
+#tragger label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+
+#midwrap_left input[type="radio"]:nth-of-type(1):checked ~ #tragger label:nth-of-type(1) {
+    background-color: #FB7299;
+}
+#midwrap_left input[type="radio"]:nth-of-type(2):checked ~ #tragger label:nth-of-type(2) {
+    background-color: #FB7299;
+}
+#midwrap_left input[type="radio"]:nth-of-type(3):checked ~ #tragger label:nth-of-type(3) {
+    background-color: #FB7299;
+}
+
+
+
+
+
+
+#midwrap_left input[type="radio"]:nth-of-type(1):checked ~ #change_pic div:nth-of-type(1) {
+    /* transform: translate3d(0px, 0px, 0px); */
+    z-index: 20;
+}
+
+
+#midwrap_left input[type="radio"]:nth-of-type(2):checked ~ #change_pic div:nth-of-type(2) {
+    /* transform: translate3d(0px, 0px, -2px); */
+    z-index: 20;
+}
+
+#midwrap_left input[type="radio"]:nth-of-type(3):checked ~ #change_pic div:nth-of-type(3) {
+    /* transform: translate3d(0px, 0px, -2px); */
+    z-index: 20;
+}
+
+
+#midwrap_right {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* 多个轴线时加入这个 */
+    align-content: space-between;
+    width: 540px;
+    height: 202px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.midwrap_pic {
+    width: 170px;
+    height: 96px;
+    position: relative;
+}
+
+.midwrap_pic img {
+    width:  100%;
+    height: 100%;
+}
+
+.midwrap_content {
+    position: absolute;
+    left:5px;
+    bottom: 5px;
+    height: 18px;
+    
+    line-height: 18px;
+    font-size: 14px;
+    /* 要使段落不换行，并且设置一定的宽度，才能进行截断，并且截断属性只对块元素有用 */
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.midwrap_pic::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-image: url(images/bg.png);
+    background-size: contain;
+    border-radius: 2px;
+    content: "";
+}
+
+
+.yincang {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #e0e0e0;
+
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    display: none;
+    font-size: 14px;
+    padding: 5px 10px 10px;
+    margin: 0 0 3px 0;
+    transition: top .2s;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.8;
+    overflow: hidden;
+  
+}
+
+
+.p_link {
+    display: block;
+    text-decoration: none;
+    color: #e0e0e0;
+    
+}
+
+.midwrap_pic:hover .yincang{
+    display: block;
+}
+
+.midwrap_pic:hover .midwrap_content {
+    display: none;
+}
+
+.p_link .yincang_p {
+    padding: 0;
+    margin: 0;
+    line-height: 18px;
+    height: 36px;
+    /* 包围文字，可以显示长度指定长度的文字 */
+    overflow: hidden;
+    /* 括号也能直接换行 */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.up {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 5px;
+}
+
+.up::before {
+    content: "UP";
+    border: 2px solid #e7e7e7;
+    border-radius: 6px;
+    margin-right: 4px;
+    /* line-height: 10px; */
+}
+
+.play {
+    margin: 5px 0 0 0;
+}
+
+
+#donghua {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+}
+
+#donghua a {
+    text-decoration: none;
+    color: #212121;
+}
+
+
+#donghua a:hover {
+    color: #73c9e5;
+}
+
+#donghualeft {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 710px;
+
+}
+
+#left_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 36px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    /* vertical-align: middle; */
+    
+}
+
+#title_left {
+    /* 通过弹性布置使元素排列在两侧，不需要绝对定位 */
+    /* position: absolute;
+    left:0;
+    top:0; */
+    vertical-align: middle;
+    overflow: hidden;
+
+    /* height: 36px; */
+}
+
+
+#title_left a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #212121;
+    vertical-align: middle;
+}
+
+#title_left img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+
+#title_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 142px;
+
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+}
+
+.left_title_right_link {
+    text-decoration: none;
+    font-size: 12px;
+    color: #212121;
+    margin: 0;
+    border: 1px solid silver;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+}
+
+a.left_title_right_link:hover {
+    /* 这里使用的是类选择符，没有之前父元素的id选择符优先级高，所以加上important强制执行这个样式 */
+    color: #212121 !important;
+    background-color: #f4f4f4 ;
+}
+
+
+.title_right_class {
+    margin: 0;
+
+}
+
+
+
+
+
+#donghua_left_main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* 消除弹性布局多栏时右边的边界 */
+    align-content: space-between;
+    height: 360px;
+
+}
+
+.donghua_item {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+}
+
+
+.donghua_item_link {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.donghua_item img {
+    width: 100%;
+    height: 96px;
+    border-radius: 2px;
+}
+
+.donghua_card {
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    width: 170px;
+    height: 96px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.donghua_card::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background-image: url(images/bg.png);
+    background-size: contain;
+    border-radius: 2px;
+    content: "";
+
+}
+
+div.bofang_dianzan {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 170px;
+    z-index: 10;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.bofang_dianzan span {
+    margin: 0 2px;
+}
+
+span.donghua_bofang {
+    margin-right: 5px;
+}
+
+.p_donghua_item_title {
+    font-size: 14px;
+    height: 40px;
+    margin: 10 0 6px;
+    padding: 0 12px 0 0;
+    text-overflow: ellipsis;
+    /* white-space: wrap; */
+    /* word-wrap: break-word;
+    word-break: break-all; */
+    line-height: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    display: -webkit-box;
+    /* 表示限制只能显示两行 */
+    -webkit-line-clamp: 2;
+    /* 与上面一个属性同时设置才有效果 */
+    -webkit-box-orient: vertical;
+}
+
+.donghua_up {
+    width: 170px;
+    color: #999;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+span.donghua_up_span {
+    font-size: 10px;
+}
+
+.donghua_up::before {
+    content: "UP";
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+.donghua_up:hover.donghua_up::before{
+
+    border-color: #73c9e5;
+}
+
+#donghuaright {
+    display: flex;
+    width: 265px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+#rank_title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 36px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.rank_name {
+    font-size: 20px;
+}
+
+
+
+.rank_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.rank_num {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    align-items: center;
+    width: 265px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 18px;
+  
+
+}
+
+.rank_num p.rank_list_title {
+    margin: 0;
+    /* flex布局下显示省略号效果需要补充设置一个宽度和为0的最小宽度，或者之前那个限制行数的方法 */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 235px;
+    height: 100%;
+    min-width: 0;
+    font-size: 14px;
+}
+
+
+#rank11 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    overflow: hidden;
+
+}
+
+#rank11 img {
+    width: 112px;
+    height: 63px;
+}
+
+
+a.rank_link_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 235px;
+    overflow: hidden;
+
+}
+
+div.rank_number1.rank_number {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 18px;
+    height: 63px;
+
+}
+
+.rank_number {
+    font-size: 14px;
+    color: #999999;
+    width: 18px;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+div#rank1_div {
+    background-color: #00A1D6;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+
+#rank1_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 111px;
+    height: 100%;
+}
+
+.rank1_right_top {
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+p.point {
+    font-size: 12px;
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.rank_number_23 {
+    background-color: #00A1D6;
+    color: #fff;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#fixed {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 28px;
+    height: 72px;
+    color: #505050;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    text-decoration: none;
+    padding: 8px 7px;
+    font-size: 12px;
+    margin: -36px 0 0;
+    box-sizing: border-box;
+    line-height: 14px;
+    box-shadow: 0 6px 10px 0 #e7e7e7;
+
+}
+
+
+
+/* #test1 {
+    z-index: 1;
+    display: inline-block;
+    box-shadow: 10px 10px 10px 10px #FB7299;
+} */
+/* #lll {
+    width: 459px;
+    height: 202px;
+    overflow: hidden;
+}
+
+#test {
+    width: 111111px;
+    height: 1111111px;
+    animation: 3s aaa infinite;
+}
+
+
+@keyframes aaa {
+    0%{}
+    33%{transform: translateX(0px);}
+    66%{transform: translateX(-459px);}
+    100%{transform: translateX(-918px);}
+}
+
+#test img {
+    width: 459px;
+    height: 202px;
+    float: left;
+} */
