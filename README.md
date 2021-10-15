@@ -1,5 +1,7 @@
 # bilibili首页实战总结
 
+https://healerl.github.io/bilibili_html_pratice/
+
 花了两天时间将B站首页尝试写了一下，发现B站基本上都是由弹性flex布局搭建的，也借这个机会学习了弹性布局，用起来真是非常方便。
 
 为弹性布局的元素指定了宽度之后，就会按照想要的方式进行排列。
